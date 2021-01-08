@@ -5,8 +5,8 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter, Route } from "react-router-dom";
 
-import StartPage from "./components/StartPage/StartPage";
-import Questions from "./components/Questions/Questions"
+import StartPage from "./components/StartPage";
+import Questions from "./components/Questions"
 
 function App() {
   return (
