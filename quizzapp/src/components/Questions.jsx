@@ -1,4 +1,5 @@
 import React from "react";
+import "./question.css";
 
 class Questions extends React.Component {
   state = {
