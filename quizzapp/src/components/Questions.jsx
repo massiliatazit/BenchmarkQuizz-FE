@@ -22,6 +22,7 @@ class Questions extends React.Component {
     try {
       let response = await fetch("http://localhost:5001/exams/start");
       let data = await response.json();
+      this.setState{(Exams: data)}
       return data;
     } catch (err) {
       console.log(err);
@@ -31,7 +32,7 @@ class Questions extends React.Component {
     return (
       <div className="container">
         <div id="game" className="flex-center flex-column">
-          <h2 id="question">Here the question</h2>
+          <h2 id="question">this.state.Exams.questions.map</h2>
           <div className="choice-container">
             <p className="choice-prefix"> A </p>
             <p className="choice-text" data-number="1">
